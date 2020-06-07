@@ -29,7 +29,7 @@ routes.post(
     upload.single('imagem'),
     celebrate({
         body: Joi.object().keys({
-            name: Joi.string().required(),
+            nome: Joi.string().required(),
             email: Joi.string().required().email(),
             whatsapp: Joi.number().required(),
             latitude: Joi.number().required(),
